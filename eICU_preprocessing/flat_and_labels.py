@@ -64,5 +64,5 @@ def flat_and_labels_main(eICU_path):
     return
 
 if __name__=='__main__':
-    eICU_path = '/Users/emmarocheteau/PycharmProjects/catherine/eICU_data/'
+    eICU_path = '/Users/asgnxt/hcnet/eICU-GNN-LSTM/eICU_data/'
     flat_and_labels_main(eICU_path)
