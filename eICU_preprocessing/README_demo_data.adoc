@@ -1,0 +1,144 @@
+= How the scripts work on the eICUDEMO dataset
+ 
+ Read this document along with the README.md file in the parent directory.
+
+== About the full dataset:
+    The full eICU Collaborative Research Database is a multi-center database comprising deidentified health data associated with over 200,000 admissions to ICUs across the United States between 2014-2015.
+ 
+== from Abstract of the demo dataset:
+ The freely accessible eICU demo database is available from Physionet (https://physionet.org/content/eicu-crd-demo/2.0.1/). 
+
+ This open access demo allows researchers to ascertain whether the eICU Collaborative Research Database is suitable for their work. It includes over 2,500 unit stays selected from 20 of the larger hospitals in the eICU Collaborative Research Database.
+
+== Exploring the demo dataset:
+All the original .csv files retrieved using the instructions on installing the dataset locally are in the directory"/Users/asgnxt/hcnet/eICU-demo/physionet.org/files/eicu-crd-demo/2.0.1". 
+
+Here's a list of all the original .csv files obtained from Physionet
+
+-rw-r--r--  1 asgnxt  staff   1.1M May  6  2021 admissionDx.csv
+
+-rw-r--r--  1 asgnxt  staff   2.5M May 23  2019 admissiondrug.csv
+
+-rw-r--r--  1 asgnxt  staff   247K May  6  2021 allergy.csv
+
+-rw-r--r--  1 asgnxt  staff   198K May 23  2019 apacheApsVar.csv
+
+-rw-r--r--  1 asgnxt  staff   620K May 23  2019 apachePatientResult.csv
+
+-rw-r--r--  1 asgnxt  staff   280K May 23  2019 apachePredVar.csv
+
+-rw-r--r--  1 asgnxt  staff   303K May 23  2019 carePlanCareProvider.csv
+
+-rw-r--r--  1 asgnxt  staff   485B May 23  2019 carePlanEOL.csv
+
+-rw-r--r--  1 asgnxt  staff   1.9M May 23  2019 carePlanGeneral.csv
+
+-rw-r--r--  1 asgnxt  staff   254K May 23  2019 carePlanGoal.csv
+
+-rw-r--r--  1 asgnxt  staff   6.8K May 23  2019 carePlanInfectiousDisease.csv
+
+-rw-r--r--  1 asgnxt  staff   1.4K May  6  2021 customLab.csv
+
+-rw-r--r--  1 asgnxt  staff   2.5M May 23  2019 diagnosis.csv
+
+-rw-r--r--  1 asgnxt  staff   3.6K May 23  2019 hospital.csv
+
+-rw-r--r--  1 asgnxt  staff   2.1M May 23  2019 infusiondrug.csv
+
+-rw-r--r--  1 asgnxt  staff    15M Jul 12  2019 intakeOutput.csv
+
+-rw-r--r--  1 asgnxt  staff    25M May 23  2019 lab.csv
+
+-rw-r--r--  1 asgnxt  staff   6.1M May 23  2019 medication.csv
+
+-rw-r--r--  1 asgnxt  staff    23K Jul 12  2019 microLab.csv
+
+-rw-r--r--  1 asgnxt  staff   3.4M Jul 12  2019 note.csv
+
+-rw-r--r--  1 asgnxt  staff    13M Jul 12  2019 nurseAssessment.csv
+
+-rw-r--r--  1 asgnxt  staff   5.6M Jul 12  2019 nurseCare.csv
+
+-rw-r--r--  1 asgnxt  staff   107M Jul 12  2019 nurseCharting.csv
+
+-rw-r--r--  1 asgnxt  staff   2.0M May 23  2019 pastHistory.csv
+
+-rw-r--r--  1 asgnxt  staff   591K May 23  2019 patient.csv
+
+-rw-r--r--  1 asgnxt  staff    12M Jul 12  2019 physicalExam.csv
+
+-rw-r--r--  1 asgnxt  staff   487K Jul 12  2019 respiratoryCare.csv
+
+-rw-r--r--  1 asgnxt  staff    10M Jul 12  2019 respiratoryCharting.csv
+
+-rw-r--r--  1 asgnxt  staff   3.4M May 23  2019 treatment.csv
+
+-rw-r--r--  1 asgnxt  staff    10M May 23  2019 vitalAperiodic.csv
+
+-rw-r--r--  1 asgnxt  staff    83M May 23  2019 vitalPeriodic.csv
+
+```
+These csv files were imported into an postgresQL database called 'eicudemo'. All the tables and materialized views in psql created by the script: "create_all_tables.sql" are as follows:
+
+Schema |           Name            |       Type        | Access privileges | Column privileges | Policies
+--------+---------------------------+-------------------+-------------------+-------------------+----------
+ public | admissiondrug             | table             |                   |                   |
+ public | admissiondx               | table             |                   |                   |
+ public | allergy                   | table             |                   |                   |
+ public | apacheapsvar              | table             |                   |                   |
+ public | apachepatientresult       | table             |                   |                   |
+ public | apachepredvar             | table             |                   |                   |
+ public | careplancareprovider      | table             |                   |                   |
+ public | careplaneol               | table             |                   |                   |
+ public | careplangeneral           | table             |                   |                   |
+ public | careplangoal              | table             |                   |                   |
+ public | careplaninfectiousdisease | table             |                   |                   |
+ public | commonlabs                | materialized view |                   |                   |
+ public | commonresp                | materialized view |                   |                   |
+ public | customlab                 | table             |                   |                   |
+ public | diagnoses                 | materialized view |                   |                   |
+ public | diagnosis                 | table             |                   |                   |
+ public | flat                      | materialized view |                   |                   |
+ public | hospital                  | table             |                   |                   |
+ public | infusiondrug              | table             |                   |                   |
+ public | intakeoutput              | table             |                   |                   |
+ public | lab                       | table             |                   |                   |
+ public | labels                    | materialized view |                   |                   |
+ public | medication                | table             |                   |                   |
+ public | microlab                  | table             |                   |                   |
+ public | note                      | table             |                   |                   |
+ public | nurseassessment           | table             |                   |                   |
+ public | nursecare                 | table             |                   |                   |
+ public | nursecharting             | table             |                   |                   |
+ public | pasthistory               | table             |                   |                   |
+ public | patient                   | table             |                   |                   |
+ public | physicalexam              | table             |                   |                   |
+ public | respiratorycare           | table             |                   |                   |
+ public | respiratorycharting       | table             |                   |                   |
+ public | timeseries_patients       | materialized view |                   |                   |
+ public | timeseriesaperiodic       | materialized view |                   |                   |
+ public | timeserieslab             | materialized view |                   |                   |
+ public | timeseriesperiodic        | materialized view |                   |                   |
+ public | timeseriesresp            | materialized view |                   |                   |
+ public | treatment                 | table             |                   |                   |
+ public | vitalaperiodic            | table             |                   |                   |
+ public | vitalperiodic             | table             |                   |                   |
+(41 rows)
+```
+ See this query run in psql on the demo database:
+ ```
+ eicudemo=# SELECT COUNT(uniquepid) FROM patient;
+ count
+  2520
+(1 row)
+
+Thus there are 2520 unique patient ID's in the demo dataset.
+
+There are 186 hospital ID's in the demo dataset. This differs from what's mentioned in the abstract (20) but could be part of de-identification process.
+
+eicudemo=# select count(*) from hospital;
+    
+    count
+    186
+    (1 row)
+
