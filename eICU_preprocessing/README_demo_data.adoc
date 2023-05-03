@@ -13,119 +13,119 @@
 == Exploring the demo dataset:
 All the original .csv files retrieved using the instructions on installing the dataset locally are in the directory"/Users/asgnxt/hcnet/eICU-demo/physionet.org/files/eicu-crd-demo/2.0.1". 
 
-Here's a list of all the original .csv files obtained from Physionet
+    Here's a list of all the original .csv files obtained from Physionet
 
--rw-r--r--  1 asgnxt  staff   1.1M May  6  2021 admissionDx.csv
+    -rw-r--r--  1 asgnxt  staff   1.1M May  6  2021 admissionDx.csv
 
--rw-r--r--  1 asgnxt  staff   2.5M May 23  2019 admissiondrug.csv
+    -rw-r--r--  1 asgnxt  staff   2.5M May 23  2019 admissiondrug.csv
 
--rw-r--r--  1 asgnxt  staff   247K May  6  2021 allergy.csv
+    -rw-r--r--  1 asgnxt  staff   247K May  6  2021 allergy.csv
 
--rw-r--r--  1 asgnxt  staff   198K May 23  2019 apacheApsVar.csv
+    -rw-r--r--  1 asgnxt  staff   198K May 23  2019 apacheApsVar.csv
 
--rw-r--r--  1 asgnxt  staff   620K May 23  2019 apachePatientResult.csv
+    -rw-r--r--  1 asgnxt  staff   620K May 23  2019 apachePatientResult.csv
 
--rw-r--r--  1 asgnxt  staff   280K May 23  2019 apachePredVar.csv
+    -rw-r--r--  1 asgnxt  staff   280K May 23  2019 apachePredVar.csv
 
--rw-r--r--  1 asgnxt  staff   303K May 23  2019 carePlanCareProvider.csv
+    -rw-r--r--  1 asgnxt  staff   303K May 23  2019 carePlanCareProvider.csv
 
--rw-r--r--  1 asgnxt  staff   485B May 23  2019 carePlanEOL.csv
+    -rw-r--r--  1 asgnxt  staff   485B May 23  2019 carePlanEOL.csv
 
--rw-r--r--  1 asgnxt  staff   1.9M May 23  2019 carePlanGeneral.csv
+    -rw-r--r--  1 asgnxt  staff   1.9M May 23  2019 carePlanGeneral.csv
 
--rw-r--r--  1 asgnxt  staff   254K May 23  2019 carePlanGoal.csv
+    -rw-r--r--  1 asgnxt  staff   254K May 23  2019 carePlanGoal.csv
 
--rw-r--r--  1 asgnxt  staff   6.8K May 23  2019 carePlanInfectiousDisease.csv
+    -rw-r--r--  1 asgnxt  staff   6.8K May 23  2019 carePlanInfectiousDisease.csv
 
--rw-r--r--  1 asgnxt  staff   1.4K May  6  2021 customLab.csv
+    -rw-r--r--  1 asgnxt  staff   1.4K May  6  2021 customLab.csv
 
--rw-r--r--  1 asgnxt  staff   2.5M May 23  2019 diagnosis.csv
+    -rw-r--r--  1 asgnxt  staff   2.5M May 23  2019 diagnosis.csv
 
--rw-r--r--  1 asgnxt  staff   3.6K May 23  2019 hospital.csv
+    -rw-r--r--  1 asgnxt  staff   3.6K May 23  2019 hospital.csv
 
--rw-r--r--  1 asgnxt  staff   2.1M May 23  2019 infusiondrug.csv
+    -rw-r--r--  1 asgnxt  staff   2.1M May 23  2019 infusiondrug.csv
 
--rw-r--r--  1 asgnxt  staff    15M Jul 12  2019 intakeOutput.csv
+    -rw-r--r--  1 asgnxt  staff    15M Jul 12  2019 intakeOutput.csv
 
--rw-r--r--  1 asgnxt  staff    25M May 23  2019 lab.csv
+    -rw-r--r--  1 asgnxt  staff    25M May 23  2019 lab.csv
 
--rw-r--r--  1 asgnxt  staff   6.1M May 23  2019 medication.csv
+    -rw-r--r--  1 asgnxt  staff   6.1M May 23  2019 medication.csv
 
--rw-r--r--  1 asgnxt  staff    23K Jul 12  2019 microLab.csv
+    -rw-r--r--  1 asgnxt  staff    23K Jul 12  2019 microLab.csv
 
--rw-r--r--  1 asgnxt  staff   3.4M Jul 12  2019 note.csv
+    -rw-r--r--  1 asgnxt  staff   3.4M Jul 12  2019 note.csv
 
--rw-r--r--  1 asgnxt  staff    13M Jul 12  2019 nurseAssessment.csv
+    -rw-r--r--  1 asgnxt  staff    13M Jul 12  2019 nurseAssessment.csv
 
--rw-r--r--  1 asgnxt  staff   5.6M Jul 12  2019 nurseCare.csv
+    -rw-r--r--  1 asgnxt  staff   5.6M Jul 12  2019 nurseCare.csv
 
--rw-r--r--  1 asgnxt  staff   107M Jul 12  2019 nurseCharting.csv
+    -rw-r--r--  1 asgnxt  staff   107M Jul 12  2019 nurseCharting.csv
 
--rw-r--r--  1 asgnxt  staff   2.0M May 23  2019 pastHistory.csv
+    -rw-r--r--  1 asgnxt  staff   2.0M May 23  2019 pastHistory.csv
 
--rw-r--r--  1 asgnxt  staff   591K May 23  2019 patient.csv
+    -rw-r--r--  1 asgnxt  staff   591K May 23  2019 patient.csv
 
--rw-r--r--  1 asgnxt  staff    12M Jul 12  2019 physicalExam.csv
+    -rw-r--r--  1 asgnxt  staff    12M Jul 12  2019 physicalExam.csv
 
--rw-r--r--  1 asgnxt  staff   487K Jul 12  2019 respiratoryCare.csv
+    -rw-r--r--  1 asgnxt  staff   487K Jul 12  2019 respiratoryCare.csv
 
--rw-r--r--  1 asgnxt  staff    10M Jul 12  2019 respiratoryCharting.csv
+    -rw-r--r--  1 asgnxt  staff    10M Jul 12  2019 respiratoryCharting.csv
 
--rw-r--r--  1 asgnxt  staff   3.4M May 23  2019 treatment.csv
+    -rw-r--r--  1 asgnxt  staff   3.4M May 23  2019 treatment.csv
 
--rw-r--r--  1 asgnxt  staff    10M May 23  2019 vitalAperiodic.csv
+    -rw-r--r--  1 asgnxt  staff    10M May 23  2019 vitalAperiodic.csv
 
--rw-r--r--  1 asgnxt  staff    83M May 23  2019 vitalPeriodic.csv
+    -rw-r--r--  1 asgnxt  staff    83M May 23  2019 vitalPeriodic.csv
 
 ```
 These csv files were imported into an postgresQL database called 'eicudemo'. All the tables and materialized views in psql created by the script: "create_all_tables.sql" are as follows:
 
-Schema |           Name            |       Type        | Access privileges | Column privileges | Policies
---------+---------------------------+-------------------+-------------------+-------------------+----------
- public | admissiondrug             | table             |                   |                   |
- public | admissiondx               | table             |                   |                   |
- public | allergy                   | table             |                   |                   |
- public | apacheapsvar              | table             |                   |                   |
- public | apachepatientresult       | table             |                   |                   |
- public | apachepredvar             | table             |                   |                   |
- public | careplancareprovider      | table             |                   |                   |
- public | careplaneol               | table             |                   |                   |
- public | careplangeneral           | table             |                   |                   |
- public | careplangoal              | table             |                   |                   |
- public | careplaninfectiousdisease | table             |                   |                   |
- public | commonlabs                | materialized view |                   |                   |
- public | commonresp                | materialized view |                   |                   |
- public | customlab                 | table             |                   |                   |
- public | diagnoses                 | materialized view |                   |                   |
- public | diagnosis                 | table             |                   |                   |
- public | flat                      | materialized view |                   |                   |
- public | hospital                  | table             |                   |                   |
- public | infusiondrug              | table             |                   |                   |
- public | intakeoutput              | table             |                   |                   |
- public | lab                       | table             |                   |                   |
- public | labels                    | materialized view |                   |                   |
- public | medication                | table             |                   |                   |
- public | microlab                  | table             |                   |                   |
- public | note                      | table             |                   |                   |
- public | nurseassessment           | table             |                   |                   |
- public | nursecare                 | table             |                   |                   |
- public | nursecharting             | table             |                   |                   |
- public | pasthistory               | table             |                   |                   |
- public | patient                   | table             |                   |                   |
- public | physicalexam              | table             |                   |                   |
- public | respiratorycare           | table             |                   |                   |
- public | respiratorycharting       | table             |                   |                   |
- public | timeseries_patients       | materialized view |                   |                   |
- public | timeseriesaperiodic       | materialized view |                   |                   |
- public | timeserieslab             | materialized view |                   |                   |
- public | timeseriesperiodic        | materialized view |                   |                   |
- public | timeseriesresp            | materialized view |                   |                   |
- public | treatment                 | table             |                   |                   |
- public | vitalaperiodic            | table             |                   |                   |
- public | vitalperiodic             | table             |                   |                   |
-(41 rows)
+    Schema |           Name            |       Type        | Access privileges | Column privileges | Policies
+    --------+---------------------------+-------------------+-------------------+-------------------+----------
+    public | admissiondrug             | table             |                   |                   |
+    public | admissiondx               | table             |                   |                   |
+    public | allergy                   | table             |                   |                   |
+    public | apacheapsvar              | table             |                   |                   |
+    public | apachepatientresult       | table             |                   |                   |
+    public | apachepredvar             | table             |                   |                   |
+    public | careplancareprovider      | table             |                   |                   |
+    public | careplaneol               | table             |                   |                   |
+    public | careplangeneral           | table             |                   |                   |
+    public | careplangoal              | table             |                   |                   |
+    public | careplaninfectiousdisease | table             |                   |                   |
+    public | commonlabs                | materialized view |                   |                   |
+    public | commonresp                | materialized view |                   |                   |
+    public | customlab                 | table             |                   |                   |
+    public | diagnoses                 | materialized view |                   |                   |
+    public | diagnosis                 | table             |                   |                   |
+    public | flat                      | materialized view |                   |                   |
+    public | hospital                  | table             |                   |                   |
+    public | infusiondrug              | table             |                   |                   |
+    public | intakeoutput              | table             |                   |                   |
+    public | lab                       | table             |                   |                   |
+    public | labels                    | materialized view |                   |                   |
+    public | medication                | table             |                   |                   |
+    public | microlab                  | table             |                   |                   |
+    public | note                      | table             |                   |                   |
+    public | nurseassessment           | table             |                   |                   |
+    public | nursecare                 | table             |                   |                   |
+    public | nursecharting             | table             |                   |                   |
+    public | pasthistory               | table             |                   |                   |
+    public | patient                   | table             |                   |                   |
+    public | physicalexam              | table             |                   |                   |
+    public | respiratorycare           | table             |                   |                   |
+    public | respiratorycharting       | table             |                   |                   |
+    public | timeseries_patients       | materialized view |                   |                   |
+    public | timeseriesaperiodic       | materialized view |                   |                   |
+    public | timeserieslab             | materialized view |                   |                   |
+    public | timeseriesperiodic        | materialized view |                   |                   |
+    public | timeseriesresp            | materialized view |                   |                   |
+    public | treatment                 | table             |                   |                   |
+    public | vitalaperiodic            | table             |                   |                   |
+    public | vitalperiodic             | table             |                   |                   |
+    (41 rows)
 ```
- See this query run in psql on the demo database:
+See this query run in psql on the demo database:
  ```
  eicudemo=# SELECT COUNT(uniquepid) FROM patient;
  count
@@ -136,56 +136,60 @@ Thus there are 2520 unique patient ID's in the demo dataset.
 
 The pre-processing scripts select certain patients from the entire dataset. For example, the first filter applied to the 'patient' table using the 'labels.sql' script removes slightly more than half the patients in the demo dataset
 
-eicudemo=# select count(distinct(patientunitstayid)) from labels;
-    count
-    1103
-    (1 row)
+    eicudemo=# select count(distinct(patientunitstayid)) from labels;
+        count
+        1103
+        (1 row)
 
-The original comments from the authors in the labels.sql script define the operations carried out: 
+    The original comments from the authors in the labels.sql script define the operations carried out: 
 
-    == comments from the labels.sql script (open the script to understand the actual SQL commands) ==
-        -- MUST BE RUN FIRST
+        == comments from the labels.sql script (open the script to understand the actual SQL commands) ==
+            -- MUST BE RUN FIRST
 
-            -- creates a materialized view labels which looks like this:
-            /*
-            patientunitstayid | predictedhospitalmortality | actualhospitalmortality |  predictediculos  | actualiculos
-            -------------------+----------------------------+-------------------------+-------------------+--------------
-                        141265 | 5.2291724973649173E-2      | ALIVE                   |  2.04551427140529 |       4.2138
-                        141650 | 9.8379312792900908E-2      | ALIVE                   |   4.0173515857653 |       4.0187
-                        141806 | 0.61324392319420928        | ALIVE                   |  8.47993403963615 |      26.9763
-                        141920 | 0.1220932810791483         | ALIVE                   |   5.7713323573653 |       2.0868
-            */`
+                -- creates a materialized view labels which looks like this:
+                /*
+                patientunitstayid | predictedhospitalmortality | actualhospitalmortality |  predictediculos  | actualiculos
+                -------------------+----------------------------+-------------------------+-------------------+--------------
+                            141265 | 5.2291724973649173E-2      | ALIVE                   |  2.04551427140529 |       4.2138
+                            141650 | 9.8379312792900908E-2      | ALIVE                   |   4.0173515857653 |       4.0187
+                            141806 | 0.61324392319420928        | ALIVE                   |  8.47993403963615 |      26.9763
+                            141920 | 0.1220932810791483         | ALIVE                   |   5.7713323573653 |       2.0868
+                */`
 
-        -- select all the data we need from the apache predictions table, plus patient identifier and hospital identifier
-        -- information because we only want to select one episode per patient (more on this later)
+            -- select all the data we need from the apache predictions table, plus patient identifier and hospital identifier
+            -- information because we only want to select one episode per patient (more on this later)
 
-            -- only use the most recent apache prediction model and exclude anyone who doesn't have at least 24 hours of data
-            -- 'selection' is a table which will choose a random hospital stay (the lowest number is fine because the stays
-            -- are randomly ordered). In the case of multiple ICU stays within that hospital admission, it will choose the
-            -- first ICU stay that satisfies the 24 hours of data requirement. The rationale is that the model should be
-            -- applied as soon as there is 24 hours of continuous data within the hospital. This query extracts 1103 stays.
-         
-         ASG comments:
-            Note: length of stay in the ICU (iculos) is 1.0 = 1 day. Thus, 24 hours of data is 1.0 ICU length of stay. The predictedhospitalmortatlity ranges from -1 to 0.0099 as present in the apachepatientresult table.
-            Only the most recent prediction results are selected along with any one ICU stay per patient that exceeds 24 hrs. Since the model takes into consideration the time series of collected data in the ICU.
-
-            Clearly, for patient graphs based on diagnoses only, these filter criteria (above) may be reducing the number of patients that can be used to construct the patient graph. 
-
-            created a new materialized view by removing the length of stay filter 'and apr.actualiculos >= 1' in the labels.sql script. The new materialized view is called 'labelsalt' and has 1496 unique patient ID's compared to the 1103 in the labels view.
-
-            eicudemo=# select count(distinct(patientunitstayid)) from labels;
-                        count
-                        1103
-                        (1 row)
-
-            eicudemo=# select count(distinct(patientunitstayid)) from labelsalt;
-                        count
-                        1496
-                        (1 row)
+                -- only use the most recent apache prediction model and exclude anyone who doesn't have at least 24 hours of data
+                -- 'selection' is a table which will choose a random hospital stay (the lowest number is fine because the stays
+                -- are randomly ordered). In the case of multiple ICU stays within that hospital admission, it will choose the
+                -- first ICU stay that satisfies the 24 hours of data requirement. The rationale is that the model should be
+                -- applied as soon as there is 24 hours of continuous data within the hospital. This query extracts 1103 stays.
             
-            thus some patients had an ICU stay of less than 24 hrs and can be included in the patient graph we may want.
+            ASG comments:
+                Note: length of stay in the ICU (iculos) is 1.0 = 1 day. Thus, 24 hours of data is 1.0 ICU length of stay. The predictedhospitalmortatlity ranges from -1 to 0.0099 as present in the apachepatientresult table.
+                Only the most recent prediction results are selected along with any one ICU stay per patient that exceeds 24 hrs. Since the model takes into consideration the time series of collected data in the ICU.
 
-    
+                Clearly, for patient graphs based on diagnoses only, these filter criteria (above) may be reducing the number of patients that can be used to construct the patient graph. 
+
+                created a new materialized view by removing the length of stay filter 'and apr.actualiculos >= 1' in the labels.sql script. The new materialized view is called 'labelsalt' and has 1496 unique patient ID's compared to the 1103 in the labels view.
+
+                eicudemo=# select count(distinct(patientunitstayid)) from labels;
+                            count
+                            1103
+                            (1 row)
+
+                eicudemo=# select count(distinct(patientunitstayid)) from labelsalt;
+                            count
+                            1496
+                            (1 row)
+                
+                thus some patients had an ICU stay of less than 24 hrs and can be included in the patient graph we may want.
+
+The 'labelsalt' materialized view includes patient stays of less than 24 hrs thus relaxing the filter and increasing total number of patients seelcted from 1103 to 1496.
+
+Using this new materialized view in the 'diagnosesalt.sql' script, the number of patients with a diagnosis increases from 1097 to 1486. Compare count of unique patient ID's in the 'diagnoses' view to the 'diagnosesalt' view.
+
+Using the new materialized view in the 'flat_features_alt.sql' script, the number of unique patient ID's increases from 1103 to 1496. Compare count of unique patient ID's in the 'flat_features' view to the 'flat_features_alt' view.
 
 
 There are 186 hospital ID's in the demo dataset. This differs from what's mentioned in the abstract (20) but could be part of de-identification process.
